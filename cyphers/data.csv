@@ -1,9 +1,12 @@
-CYPHER_TYPE,INPUT,OUTPUT,KEY
+CIPHER_TYPE,INPUT,OUTPUT,KEY
 
-caesar,skibidi,asqjqlq,8
-caesar,rocco,tqeeq,2
-caesar,Hello world,Qnuux fxaum,9
-caesar,mouse,acigs,14
-caesar,headphones,khdgskrqhv,3
-substitution,hello world,hyaad zdvax,nugxyrphljeaisdbtvcqfmzkwo
-substitution,hello world,Cjxxn Pnext,qkftjmvcgwzxudnraesohlpiyb
+caesar,testing,lwklafy,18
+substitution,testing,aesazkc,goxjencwztdqbkivhlsayufmrp
+stream,hello world,0xA025AB4E38EBBF939F5531,0xC840C72257CBC8FCED3955
+caesar,helloworld,nkrrucuxrj,6
+caesar,Waterbottle,Nrkvisfkkcv,17
+caesar,Goodbye,Yggvtqw,18
+caesar,mouse,lntrd,25
+substitution,hello world,Hbjjy Lypjw,gamwbxohfutjscyinperdzlvkq
+stream,radiator,0x06C6EDF81787F516,0x74A7899176F39A64
+stream,Hello,0x6D79235D14,0x251C4F317B
