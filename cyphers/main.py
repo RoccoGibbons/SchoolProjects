@@ -302,12 +302,20 @@ def substitutionDecrypt():
     sleep(0.5)
 
     valid_key = False
-    while valid_key == False:
+    while True:
         os.system('cls')
         subPrint()
-
         valid_key = True
         key = input("\nPlease enter your key:\n")
+
+        if len(key) != 26:
+            sleep(0.5)
+            os.system('cls')
+            subPrint()
+            print("\nKey is not correct length")
+            valid_key = False
+            sleep(1)
+            continue
 
         for letter in key:
             if letter in alphabet:
@@ -321,6 +329,10 @@ def substitutionDecrypt():
                 valid_key = False
                 sleep(1)
                 break
+
+        if valid_key == True:
+            break
+        
     
     # check csv file
     msg = csvCheck("substitution", sentence, key)
@@ -513,7 +525,7 @@ def streamDecrypt():
                     os.system('cls')
                     streamPrint()
 
-                    print(f"\nInvalid input, please enter a hexadecimal: {char}")
+                    print("\nInvalid input, please enter a hexadecimal")
                     sleep(1)
                     error = 1
                     break
@@ -612,10 +624,11 @@ while True:
         os.system('cls')
         continue
 
+    sleep(0.5)
+
     #Encryption
     if option == "1":
         while True:
-            sleep(0.5)
             os.system('cls')
             print("""
  _______                               __   __              
