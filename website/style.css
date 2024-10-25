@@ -1,6 +1,7 @@
 body {
     background: rgb(63,94,251);
     background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+    margin: 0px;
 }
 
 .button {
@@ -62,6 +63,16 @@ button:active {
     border-radius: 10px;
 }
 
+.text-home {
+    font-size:15pt;
+    text-align: center;
+}
+
+.photo {
+    text-align: center;
+    padding-bottom: 2%;
+}
+
 .wrapper {
     display: flex;
     padding-left: 1%;
@@ -81,13 +92,13 @@ button:active {
 }
 
 .footer{
+    //position: fixed;
     background-color: rgba(0, 0, 0, 0.785);
-    width:99%;
+    width:98%;
     height: 5%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    bottom:1;
     color:darkgrey;
     padding-left:1%;
     padding-top: 1%;
-    padding-bottom:1%;
+    padding-right: 1%;
 }
