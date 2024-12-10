@@ -1,38 +1,43 @@
 body {
-    background: rgb(66, 68, 75);
-    /* background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);  */
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
     margin: 0px;
 }
 
 .button {
-    background-color: rgba(255, 255, 255, 0.551);
-    border-color:darkslategray;
+    background-color: rgba(132, 130, 130, 0.377);
     padding-top:5px;
     padding-bottom:5px;
     padding-left:7px;
     padding-right:7px;
+    border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 7px;
 }
 
-
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active {
+    box-shadow: none;
+}
 
 .navbar {
-    background-color: rgb(25, 25, 25);
+    background-color: rgba(88, 88, 88, 0.65);
     text-align: center;
     padding-right: 1%;
     padding-left:1%;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom-left-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     word-spacing: 10px;
     width:auto;
-    /* margin-right:2.5%;
-    margin-top: 1%; */
+    margin-right:2.5%;
+    margin-top: 1%;
     margin-bottom: 100px;
     float:right;
 }
@@ -41,22 +46,21 @@ body {
     font-size: 60pt;
     font-style: italic;
     font-family: sans-serif;
+    text-align: center;
     padding-top: 5%;
     padding-bottom: 1%;
+    margin-left:15%;
     width: 100%;
-    margin-left: 10%
 }
 
 .background {
-    background-color: rgba(255, 255, 255, 0.412);
-    padding:1%;
+    background-color: rgba(88, 88, 88, 0.65);
+    padding:50px;
     margin-bottom: 2.5%;
     margin-left:2.5%;
     margin-right:2.5%;
     text-align: left;
-    border-radius: 5px;
-    border-color: goldenrod;
-    border-width: 10px;
+    border-radius: 10px;
 }
 
 .text-home {
@@ -85,7 +89,7 @@ body {
 .pictures {
     margin-right: 2.5%;
     padding-left: 5%;
-    /* margin-top:5%; */
+    margin-top:5%;
 }
 
 #invis {
