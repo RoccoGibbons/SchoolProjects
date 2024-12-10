@@ -92,8 +92,11 @@ button:active {
     margin-top:5%;
 }
 
+#invis {
+    display: none;
+}
+
 .footer{
-    //position: fixed;
     background-color: rgba(0, 0, 0, 0.785);
     width:98%;
     height: 5%;

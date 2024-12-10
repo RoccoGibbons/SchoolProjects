@@ -18,24 +18,37 @@
     <div class = "header">Quiz</div>
     <div class = "background">
         <div class = "text">
-            This... is a quiz :0 
         </div>
-        <form> 
-            <label for "q1">Question 1:</label><br>
-            <input type = "radio" id = "q1" name = q1><br>
+        <form onsubmit="event.preventDefault();"> 
+            <input type = "radio" name = "q0" checked="checked" id="invis"><br>
+            <label for "q1">Question 1: What's my name?</label><br>
+            <input type = "radio" name = "q1" value = "a">a: John Jones<br>
+            <input type = "radio" name = "q1" value = "b">b: Michael Densley<br>
+            <input type = "radio" name = "q1" value = "c">c: Rocco Gibbons<br>
+            <input type = "radio" name = "q1" value = "d">d: Sam Skellett<br>
 
-            <label for "q2">Question 2:</label><br>
-            <input type = "radio" id = "q2" name = q2><br>
+            <label for "q2">Question 2: What language was my first 'big' project (calculator) written in?</label><br>
+            <input type = "radio" name = "q2" value = "a">a: Python<br>
+            <input type = "radio" name = "q2" value = "b">b: Javascript<br>
+            <input type = "radio" name = "q2" value = "c">c: C<br>
+            <input type = "radio" name = "q2" value = "d">d: C++<br>
 
-            <label for "q3">Question 3:</label><br>
-            <input type = "radio" id = "q3" name = q3><br>
+            <label for "q3">Question 3: Where did I do my work experience?</label><br>
+            <input type = "radio" name = "q3" value = "a">a: Google<br>
+            <input type = "radio" name = "q3" value = "b">b: Mcdonalds<br>
+            <input type = "radio" name = "q3" value = "c">c: XOR Systems<br>
+            <input type = "radio" name = "q3" value = "d">d: Apple<br>
 
-            <label for "q4">Question 4:</label><br>
-            <input type = "radio" id = "q4" name = q4><br>
+            <label for "q4">Question 4: What was the name of the maths competition that I competed in?</label><br>
+            <input type = "radio" name = "q4" value = "a">a: Ritangle<br>
+            <input type = "radio" name = "q4" value = "b">b: Triangle<br>
+            <input type = "radio" name = "q4" value = "c">c: UKMT<br>
+            <input type = "radio" name = "q4" value = "d">d: Circle<br>
 
-            <input type = "submit" value = "Submit">
+            <button id = "submit" onclick="findScore()">Submit</button>
         </form>
         <script src = "script.js"></script> 
+        <div id="output"></div>
     </div>
     <div class = "footer">
         <img src = "github-mark-white.png" alt = "githublogo" width ="20" height="20" \>

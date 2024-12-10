@@ -1,20 +1,22 @@
-// vars q1 q2 q3 q4
+function findScore(score) {
 
-function quiz_score(q1, q2, q3, q4) {
-	total = 0;
-	
-	if(q1 == "answer here") {
-		total++;
-	}
-	if(q2 == "answer here") {
-		total++;
-	}
-	if(q3 == "answer here") {
-		total ++;
-	}
-	if q4 == "answer here") {
-		total ++;
-	}
-	return total;
+	score = 0;
+	const form = document.querySelector("form");
+
+	const data = new FormData(form);
+	let answers = data.values();
+	var stuff = data.entries();
+
+	answers = ["", "c", "d", "c", "a"]
+	let counter = 0;
+
+	for (var pair of stuff) {
+		if(String(pair[1]) == answers[counter]){
+			score++;
+		}
+		// console.log(pair[0]+ ', ' + pair[1] + ", " + answers[counter]); 
+		counter++;
+	}	
+	// console.log(score);
+	output.innerHTML = score;
 }
-
