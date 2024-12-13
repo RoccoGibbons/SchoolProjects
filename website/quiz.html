@@ -12,7 +12,7 @@
             <button class = "button">Projects</button>
         </a>
         <a href = "quiz.html" style = "text-decoration:none">
-            <button class = "button">Quiz</button>
+            <button class = "button rb">Quiz</button>
         </a>
     </div>
     <div class = "header">Quiz</div>
@@ -21,31 +21,35 @@
         </div>
         <form onsubmit="event.preventDefault();"> 
             <input type = "radio" name = "q0" checked="checked" id="invis"><br>
-            <label for "q1">Question 1: What's my name?</label><br>
+            <label for "q1"><u>Question 1:</u> What's my name?</label><br>
             <input type = "radio" name = "q1" value = "a">a: John Jones<br>
             <input type = "radio" name = "q1" value = "b">b: Michael Densley<br>
             <input type = "radio" name = "q1" value = "c">c: Rocco Gibbons<br>
             <input type = "radio" name = "q1" value = "d">d: Sam Skellett<br>
+            <p></p>
 
-            <label for "q2">Question 2: What language was my first 'big' project (calculator) written in?</label><br>
+            <label for "q2"><u>Question 2:</u> What language was my first 'big' project (calculator) written in?</label><br>
             <input type = "radio" name = "q2" value = "a">a: Python<br>
             <input type = "radio" name = "q2" value = "b">b: Javascript<br>
             <input type = "radio" name = "q2" value = "c">c: C<br>
             <input type = "radio" name = "q2" value = "d">d: C++<br>
+            <p></p>
 
-            <label for "q3">Question 3: Where did I do my work experience?</label><br>
+            <label for "q3"><u>Question 3:</u> Where did I do my work experience?</label><br>
             <input type = "radio" name = "q3" value = "a">a: Google<br>
             <input type = "radio" name = "q3" value = "b">b: Mcdonalds<br>
             <input type = "radio" name = "q3" value = "c">c: XOR Systems<br>
             <input type = "radio" name = "q3" value = "d">d: Apple<br>
+            <p></p>
 
-            <label for "q4">Question 4: What was the name of the maths competition that I competed in?</label><br>
+            <label for "q4"><u>Question 4:</u> What was the name of the maths competition that I competed in?</label><br>
             <input type = "radio" name = "q4" value = "a">a: Ritangle<br>
             <input type = "radio" name = "q4" value = "b">b: Triangle<br>
             <input type = "radio" name = "q4" value = "c">c: UKMT<br>
             <input type = "radio" name = "q4" value = "d">d: Circle<br>
+            <p></p>
 
-            <button id = "submit" onclick="findScore()">Submit</button>
+            <button class = "button" id = "submit" onclick="findScore()">Submit</button>
         </form>
         <script src = "script.js"></script> 
         <div id="output"></div>

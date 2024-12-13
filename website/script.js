@@ -18,5 +18,5 @@ function findScore(score) {
 		counter++;
 	}	
 	// console.log(score);
-	output.innerHTML = score;
+	output.innerHTML = `Score: ${score}/4` ;
 }
